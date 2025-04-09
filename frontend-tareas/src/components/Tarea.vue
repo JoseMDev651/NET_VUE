@@ -19,8 +19,9 @@
                         <ul class="list-group">
                             <li v-for="(tarea,index) of listTareas" :key="index"
                             class="list-group-item d-flex justify-content-between">
-                                <span class="cursor" v-on:click="editarTarea(tarea, index)">
-                                    <i class="fa-regular fa-circle"></i>
+                                <span class="cursor" v-bind:class="{'text-success':tarea.estado}"
+                                v-on:click="editarTarea(tarea, index)">
+                                    <i v-bind:class="[tarea.estado ? 'fa-regular fa-circle-check' : 'fa-regular fa-circle']"></i>
                                 </span>
                                 {{ tarea.nombre }}
                                 <span class="text-danger cursor" v-on:click="eliminarTarea(index)">
