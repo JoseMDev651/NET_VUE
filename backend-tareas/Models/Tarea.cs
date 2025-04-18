@@ -10,6 +10,6 @@ namespace backend_tareas.Models
         [Column(TypeName = "varchar(100)")]
         public required string Nombre { get; set; }
         [Required]
-        public required int MyProperty { get; set; }
+        public required bool Estado { get; set; }
     }
 }
