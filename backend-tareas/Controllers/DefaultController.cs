@@ -12,7 +12,9 @@ namespace backend_tareas.Controllers
         [HttpGet]
         public string Get()
         {
-            return "Aplicacion corriendo...";
+            return "Aplicación corriendo...";
         }
+
+        
     }
 }
