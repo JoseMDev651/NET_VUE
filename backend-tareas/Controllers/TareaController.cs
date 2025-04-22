@@ -78,7 +78,7 @@ namespace backend_tareas.Controllers
                 }
                 _context.Tareas.Remove(tarea);
                 await _context.SaveChangesAsync();
-                return Ok(new { message = "Tarea elminada con éxito" });
+                return Ok(new { message = "Tarea eliminada con éxito" });
             }
             catch (Exception ex)
             {
